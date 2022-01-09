@@ -1,0 +1,44 @@
+
+SEND OUR REQUEST USING POSTMAN
+
+GET http://localhost:3000/subscribers  result: []
+
+
+
+
+
+
+
+POST http://localhost:3000/subscribers     result: {
+                                                id: "given by postman",
+                                                "subscribedToChannel": "Web Dev Simplified",
+                                                "subscribedDate" : "Current time and date given to us by JavaScript"
+                                                    }
+
+json body:
+{
+    "name" : "Amaizing Person",
+    "subscribers" : "Web Dev Simplified"
+}
+
+
+
+DELETE http://localhost:3000/subscribers/IDgivenByPostMan  result: []
+
+
+
+
+
+
+PUT http://localhost:3000/subscribers/IDgivenByPostMan/IDgivenByPostMan         result: {
+                                                                                id: "given by postman",
+                                                                                "subscribedToChannel": "New Name",
+                                                                                "subscribedDate" : "Current time and date given to us by JavaScript"
+                                                                                                }
+
+
+json body:
+{
+    "name" : "New Name",
+    "subscribers" : "Web Dev Simplified"
+}
