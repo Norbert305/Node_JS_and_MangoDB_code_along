@@ -20,7 +20,7 @@ mangoose.connect('mangoodb://localhost/subscribers', {useNewURLParser: true})// 
 //connect to our databse with subcribers as our DataBase name of choice
 
 
-const db = mangoose.connection //run events that out DataBase is connected to. 
+const db = mangoose.connection //run events that our DataBase is connected to. 
 
 db.on('error', (error)=> console.error(error)) //events we can run that our DataBase is connected to so that we know it's working correctly. 
 db.once('open', ()=> console.log('connected to DataBase')) //db.once = clarifys that this event will only run once. Only when Database opens. 
